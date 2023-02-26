@@ -1,0 +1,404 @@
+.FundoDark {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0,0,0, 0.7);
+  opacity: 50%;
+  z-index: 22;
+  display: none;
+}
+.FundoDark.ativo {
+  display: block;
+}
+.Navbar {
+  width: 100%;
+  height: 12.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0D0D0D;
+  padding: 0 13.2%;
+  position: relative;
+  z-index: 24;
+}
+.Logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 3.2em;
+  font-weight: 600;
+  font-family: 'Ubuntu', sans-serif;
+  text-transform: uppercase;
+}
+.Guias {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  gap: 2.4em;
+}
+.Guias li {
+  list-style: none;
+}
+.Guias li a {
+  position: relative;
+  text-decoration: none;
+  font-size: 2.2em;
+  color: white;
+}
+.Guias li a:hover {
+  color: orange;
+}
+.ativar::after {
+    position: absolute;
+    left: 0;
+    bottom: -0.6em;
+    background-color: orange;
+    content: "";
+    width: 100%;
+    height: 0.36em;
+    border-radius: 2px;
+    animation: SlideBarra 400ms ease;
+  }
+#abrirMenu {
+  font-size: 4.5em;
+  position: absolute;
+  right: 0.5em;
+  display: none;
+}
+#fecharMenu {
+  font-size: 4.5em;
+  position: absolute;
+  top: 0.4em;
+  right: 0.5em;
+  display: none;
+}
+ .Home {
+  width: 100%;
+  height: calc(100vh - 12.5em);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Apresentacao {
+  position: relative;
+  width: 74%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3.6em;
+}
+.Apresentacao h1 {
+  font-size: 7.5em;
+}
+.Apresentacao p {
+  font-size: 1.55em;
+  max-width: 35em;
+}
+.TituloContatos {
+  display: none;
+}
+.Contatos {
+  position: absolute;
+  right: -3em;
+  bottom: 0;
+  min-width: 0vw;
+  min-height: 0vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6em;
+  padding: 4em 3em;
+  flex-wrap: nowrap;
+}
+.Contatos a {
+  text-decoration: none;
+}
+.Contatos div {
+  min-width: 0;
+  height: 5em;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: orange;
+}
+.Contatos div:hover {
+  color: white;
+}
+.Contatos i {
+  font-size: 2em;
+}
+.Contatos p {
+  font-size: 1.4em;
+}
+.
+.Projetos {
+  height: calc(100vh - 12.5em);
+  max-height: 600px;
+}
+.FeedProjetos {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4em;
+  padding: 4em;
+}
+.FeedProjetos li {
+  width: 26em;
+  height: 24em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  background-color: white;
+  color: black;
+  border-radius: 1.5em;
+  padding: 1.6em 2em;
+  position: relative;
+}
+.FeedProjetos li:hover {
+  transform: scale(1.04) translatey(0.5em);
+  transition: 200ms ease-out;
+  box-shadow: 0 0 0 3.6px orange;
+}
+.FeedProjetos li h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 25%;
+  font-size: 1.6em;
+}
+.FeedProjetos li p {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  height: 50%;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.FeedProjetos li span {
+  position: absolute;
+  right: 2em;
+  bottom: 1.4em;
+  font-weight: 600;
+}
+.IrLink {
+  width: 80px;
+  height: 36px;
+  border: solid 0.1em #0D0D0D; 
+  border-radius: 0.5em;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+.IrLink:hover {
+  transform: scale(1.06);
+}
+.Skills {
+  width: 100%;
+  min-height: calc(100vh - 12.5em);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Skills ul {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 3em;
+}
+.Skills ul li {
+  font-size: 1.12em;
+}
+
+
+@media (max-height: 480px) and (orientation: landscape) {
+  body {
+    font-size: 7px;
+  }
+  .Navbar {
+    height: 8em;
+  }
+  .IrLink {
+    width: 50px;
+    height: 24px;
+  }
+}
+
+@media (min-height: 960px) and (min-width: 720px) and (orientation: portrait) {
+  .Navbar {
+    padding: 0 10%;
+  }
+}
+
+
+@media (max-width: 660px) and (orientation: portrait) {
+  
+  body.estatico {
+    overflow: hidden;
+  }
+  
+  .Navbar {
+    height: 8em;
+    position: fixed;
+    top: 0;
+  }
+  .Guias {
+    position: fixed;
+    flex-direction: column;
+    background-color: #0D0D0D;
+    width: 50%;
+    height: 46%;
+    top: 0;
+    justify-content: center;
+    align-items: flex-start;
+    border-bottom-left-radius: 2em;
+    right: -100%;
+    transition: 500ms ease-out;
+    padding: 10% 0;
+    gap: 3.6em;
+    border-bottom: solid 2px grey;
+    border-left: solid 2px grey;
+    z-index: 30;
+  }
+  .Guias li {
+    width: 100%;
+    padding: 0 30%;
+  }
+  .Logo {
+    position: absolute;
+    left: 1em;
+    font-size: 2.2em;
+  }
+  #abrirMenu {
+    display: flex;
+  }
+  #abrirMenu.hidden {
+    display: none;
+  }
+  #fecharMenu.ativo {
+    display: block;
+  }
+  .Guias.ativo {
+    display: flex;
+    right: 0;
+  }
+  .Guias a {
+    font-size: 2em;
+  }
+  .Home {
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  .Apresentacao {
+    height: 100%;
+    padding-top: 40%;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3.6em;
+  }
+.Apresentacao h1 {
+    font-size: 4em;
+}
+.Apresentacao p {
+  padding: 0em 2.5em;
+  font-size: 1.6em;
+}
+.TituloContatos {
+  display: block;
+  position: absolute;
+  top: -0.5em;
+  font-weight: 500;
+  font-size: 1.8em;
+}
+.Contatos {
+  bottom: 5%;
+  right: 0;
+  left: 0;
+  width: 100%;
+  min-height: 0vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 2em;
+  align-items: center;
+  padding: 4em 0;
+  color: orange;
+  flex-wrap: wrap;
+}
+.Contatos div {
+  width: 17em;
+  height: 6em;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Contatos i {
+  font-size: 2.5em;
+}
+.Contatos p {
+  font-size: 1.7em;
+}
+.Projetos {
+  padding-top: 8em;
+  min-height: 100vh;
+}
+.FeedProjetos {
+  min-height: 0vh;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  gap: 6em;
+  padding: 4em 0;
+}
+.FeedProjetos li {
+  width: 75%;
+}
+.FeedProjetos li:hover {
+  transform: none;
+}
+.Skills {
+  min-height: 100vh;
+  display: block;
+  padding: 0 6em;
+}
+.Skills ul {
+  padding-top: 12em;
+  width: 100%;
+  gap: 5em;
+}
+.Skills ul li {
+  font-size: 1.6em;
+}
+}
+
+@keyframes SlideBarra {
+  
+  0% {
+    transform: translatey(100%);
+  }
+  100% {
+    transform: translatey(0);
+  }
+}
