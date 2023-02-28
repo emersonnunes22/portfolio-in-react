@@ -3,8 +3,7 @@ function PageHome() {
     <div className="Home">
     <div className="Apresentacao">
     <h1 className="Titulo">Web Developer</h1>
-    <p className="Sobre-mim">Meu Nome é<p style={{fontSize:"1em"
-    }}>Emerson Nunes</p>,  tenho 21 anos, sou apaixonado por tecnologia e arte. Transformo ideias em realidade digital com habilidades em desenvolvimento web.</p>
+    <p className="Sobre-mim">Meu Nome é <u className="underlineNome">Emerson Nunes</u>,  tenho 21 anos, sou apaixonado por tecnologia e arte. Transformo ideias em realidade digital com habilidades em desenvolvimento web.</p>
     <div className="Contatos">
     <h2 className="TituloContatos">Contatos:</h2>
     <a href="https://github.com/emersonnunes22"><div>
