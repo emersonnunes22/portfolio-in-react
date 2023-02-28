@@ -1,7 +1,7 @@
 import { useState, useEffect} from 'react';
 import Projetos from './ListaProjetos.js';
 function PageProjetos() {
-
+ Projetos.sort((a, b) => b.ano - a.ano);
   return (
     <div className="Projetos">
     <ul className="FeedProjetos">

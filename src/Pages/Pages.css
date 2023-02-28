@@ -2,7 +2,7 @@
   width: 100%;
   height: 100vh;
   position: fixed;
-  background-color: rgba(0,0,0, 0.7);
+  background-color: rgba(0,0,0, 0.8);
   opacity: 50%;
   z-index: 22;
   display: none;
@@ -60,17 +60,17 @@
     content: "";
     width: 100%;
     height: 0.36em;
-    border-radius: 2px;
+    border-radius: 0.2em;
     animation: SlideBarra 400ms ease;
   }
 #abrirMenu {
-  font-size: 4.5em;
+  font-size: 3.5em;
   position: absolute;
   right: 0.5em;
   display: none;
 }
 #fecharMenu {
-  font-size: 4.5em;
+  font-size: 3.5em;
   position: absolute;
   top: 0.4em;
   right: 0.5em;
@@ -92,9 +92,10 @@
   justify-content: center;
   align-items: flex-start;
   gap: 3.6em;
+  padding-bottom: 6%;
 }
 .Apresentacao h1 {
-  font-size: 7.5em;
+  font-size: 8.5em;
 }
 .Apresentacao p {
   font-size: 1.55em;
@@ -105,7 +106,7 @@
 }
 .Contatos {
   position: absolute;
-  right: -3em;
+  right: -0.5em;
   bottom: 0;
   min-width: 0vw;
   min-height: 0vh;
@@ -114,7 +115,7 @@
   justify-content: center;
   align-items: center;
   gap: 1.6em;
-  padding: 4em 3em;
+  padding-bottom: 4em;
   flex-wrap: nowrap;
 }
 .Contatos a {
@@ -129,17 +130,16 @@
   justify-content: center;
   align-items: center;
   color: orange;
+  border: solid 0.1em white;
+  border-radius: 0.6em;
+  padding: 0em 1em;
 }
 .Contatos div:hover {
   color: white;
 }
-.Contatos i {
-  font-size: 2em;
-}
 .Contatos p {
   font-size: 1.4em;
 }
-.
 .Projetos {
   height: calc(100vh - 12.5em);
   max-height: 600px;
@@ -212,24 +212,26 @@
 }
 .Skills {
   width: 100%;
-  min-height: calc(100vh - 12.5em);
+  height: calc(100vh - 12.5em);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .Skills ul {
-  width: 60%;
-  height: 100%;
+  width: 70%;
+  height: 70%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-start;
   gap: 3em;
 }
 .Skills ul li {
-  font-size: 1.12em;
+  width: 100%;
 }
-
+.Skills ul li p {
+  font-size: 1.2em;
+}
 
 @media (max-height: 480px) and (orientation: landscape) {
   body {
@@ -316,6 +318,7 @@
     align-items: center;
     justify-content: flex-start;
     gap: 3.6em;
+    padding-bottom: 0;
   }
 .Apresentacao h1 {
     font-size: 4em;
@@ -327,7 +330,7 @@
 .TituloContatos {
   display: block;
   position: absolute;
-  top: -0.5em;
+  top: -1em;
   font-weight: 500;
   font-size: 1.8em;
 }
@@ -342,28 +345,27 @@
   justify-content: space-around;
   gap: 2em;
   align-items: center;
-  padding: 4em 0;
+  padding: 4em 1em;
   color: orange;
   flex-wrap: wrap;
 }
 .Contatos div {
-  width: 17em;
-  height: 6em;
+  width: 14em;
+  height: 5em;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.Contatos i {
-  font-size: 2.5em;
+  padding: 0;
+  margin-top: 0.6em;
 }
 .Contatos p {
-  font-size: 1.7em;
+  font-size: 1.5em;
 }
 .Projetos {
   padding-top: 8em;
-  min-height: 100vh;
+  min-height: 100vh; 
 }
 .FeedProjetos {
   min-height: 0vh;
@@ -384,13 +386,19 @@
   padding: 0 6em;
 }
 .Skills ul {
-  padding-top: 12em;
   width: 100%;
+  height: 100%;
   gap: 5em;
 }
-.Skills ul li {
-  font-size: 1.6em;
+.Skills ul li p {
+  font-size: 1.5em;
 }
+}
+
+@media (min-width: 1440px) and (orientation: landscape) {
+ .Skills ul li p {
+   font-size: 1.36em;
+ }
 }
 
 @keyframes SlideBarra {

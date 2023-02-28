@@ -56,10 +56,10 @@ function Reloader () {
     <li>
     <Link to="/skills" className={ activeLink === "/skills" ? "ativar": ""}
     onClick={() => Guias("/skills")}>Skills</Link>
-    <i id="fecharMenu" className='bx bx-x' onClick={desativarMenu}></i>
+    <i id="fecharMenu" className="fa-solid fa-xmark" onClick={desativarMenu}></i>
     </li>
     </ul>
-     <i id="abrirMenu" className='bx bx-menu' onClick={ativarMenu}></i>
+     <i id="abrirMenu" className="fa-solid fa-bars" onClick={ativarMenu}></i> 
     </nav>
   );
 }
